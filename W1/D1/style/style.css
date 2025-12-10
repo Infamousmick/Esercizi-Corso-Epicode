@@ -102,15 +102,24 @@ p.img-description {
     margin-bottom: 40px;
     padding-left: 15px;
     font-size: 14px;
-    font-weight: 300px;
-    border-left: 1px solid rgb(255, 255, 2)
+    font-weight: 400;
+    width: 500px;
+    border-left: 1px solid rgb(255, 255, 2);
+    box-sizing: border-box;
 }
 
 .featured-link h2 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0px;
     text-align: left;
     color: rgb(239, 39, 17)
+}
+
+.main-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .ingredients h2, .method h2 {
@@ -121,18 +130,27 @@ p.img-description {
 }
 
 .ingredients h3, .method h3 {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0px;
     margin-top: 20px;
     padding: 0px;
 }
 
 .ingredients li, .method li, .method p {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 450;
     margin: 0px;
     padding: 0px;
 }
 
+.ingredients li, .method li {
+    margin-top: 5px;
+}
+
 .method p {
     margin-top: 8px;
+}
+
+.ingredients, .method {
+    width: 500px;
 }
