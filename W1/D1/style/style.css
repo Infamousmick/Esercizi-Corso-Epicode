@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap');
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    color: rgb(8 120 120);
+}
+
 .logo {
     background-image: url('../assets/logo.png');
     background-size: contain;
@@ -12,9 +22,117 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-
     margin: 0px;
     padding: 0px;
 }
 
-.main-page {}
+.logo-description {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 118, 0.545);
+    border-top: 2px solid rgb(255, 255, 2);
+}
+
+.logo-description p {
+    font-size: 12px;
+    color: rgb(8 120 120);
+    font-weight: 450;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main-description h1 {
+    text-align: center;
+    width: 500px;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.main-description p {
+    width: 500px;
+    margin: 0px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main-img {
+    position: relative;
+    margin: 0px;
+    width: 500px;
+    height: 357px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main-img img {
+    border-radius: 8px;
+    transform: translate(-50%, -50%)rotate(90deg);
+}
+
+p.img-description {
+    color: rgb(73, 73, 73);
+    font-size: 12px;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.featured-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 300px;
+    border-left: 1px solid rgb(255, 255, 2)
+}
+
+.featured-link h2 {
+    font-size: 1.1em;
+    margin: 0px;
+    text-align: left;
+    color: rgb(239, 39, 17)
+}
+
+.ingredients h2, .method h2 {
+    margin: 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(41, 239, 239, 0.7);
+    font-size: 16px;
+}
+
+.ingredients h3, .method h3 {
+    font-size: 10px;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.ingredients li, .method li, .method p {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.method p {
+    margin-top: 8px;
+}
